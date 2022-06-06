@@ -1,7 +1,8 @@
 :root {
     --bodyColor: rgb(44, 44, 44);
-    --cardColor: rgb(31, 31, 31);
-    --navHover: rgb(33, 248, 122);  
+    --cardColor: rgb(31, 31, 31); 
+    --orangeColor: rgb(255, 131, 73); 
+    --darkOrangeColor: rgb(255, 107, 38);
     --fontColor: #fff;
     --headerFont: 'Joan', serif;
 }
@@ -42,21 +43,31 @@ body {
 img {
     min-height: 350px;
     max-height: 500px;
-    min-width: 350px;
     max-width: 450px;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-h1 {
+h1, h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    color: var(--orangeColor);
+    text-shadow: 3px 3px #151515;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+.hyperlink {
+    color: var(--orangeColor);
+}
+
+.hyperlink:hover {
+    color: var(--darkOrangeColor);
+    text-decoration: underline;
 }
 
 p {
@@ -67,15 +78,16 @@ p {
     padding: 1rem;
     background-color: var(--cardColor);
     margin-bottom: 1rem;
+    max-width: 900px;
+}
+
+.box--shadow {
+    box-shadow: 3px 6px 9px var(--orangeColor); /* #151515 old code in case of regrets */
 }
 
 .portfolio--card--spacing {
     display: grid;
     grid-area: auto;
-}
-
-.box--shadow {
-    box-shadow: 3px 6px 9px #151515;
 }
 
 .portfolio--container {
@@ -118,16 +130,45 @@ ul li {
     margin-right: 5px;
     display: inline-block;
     font-size: 2rem;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-right: 1px solid var(--orangeColor);
+    border-bottom: 1px solid var(--orangeColor);
 }
 
 ul li:hover {
     background: var(--cardColor);
-    color: var(--navHover);
+    color: var(--orangeColor);
+}
+/* Greetings Section */
+
+.greetings--section .content--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.greetings--section p {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.greetings--section img {
+    border-radius: 50%;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+/* Media Queries */
+
 @media (max-width: 830px) {
+    .portfolio--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .changeThisNameLol {
         display: grid;
         grid-template-columns: 1fr;
@@ -135,5 +176,15 @@ ul li:hover {
     }
     .nav {
         display: none;
+    }
+
+    .card--heading {
+        margin-top: 0.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .greetings--section p {
+        font-size: 1.6rem;
     }
 }
