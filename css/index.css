@@ -1,7 +1,7 @@
 :root {
     --bodyColor: rgb(44, 44, 44);
     --cardColor: rgb(31, 31, 31); 
-    --mainColor: rgb(255, 131, 73); 
+    --mainColor: rgb(255, 154, 107); 
     --secondaryColor: rgb(255, 107, 38);
     --shadowColor: rgb(10, 10, 10);
     --fontColor: #fff;
@@ -259,7 +259,12 @@ p {
 
 /* Media Queries */
 
-@media (max-width: 830px) {
+@media (max-width: 670px) {
+
+    .heading {
+        margin-top: 1rem;
+    }
+
     .portfolio--container {
         display: flex;
         flex-direction: column;
