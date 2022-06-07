@@ -1,1 +1,0 @@
-// I'm leaving the file here but for this site I didn't need any js to do what I wanted.

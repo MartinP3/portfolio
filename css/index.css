@@ -1,12 +1,13 @@
 /* Structuring for CSS
 
-Global stuff: line 12
-Greetings Section: line 118
-Tools & Socials section: line 142
-Portfolio section: line 217
-Header: line 255
-WCAG class: line 280
-Media Queries: line 292
+Global stuff:            line 13
+Loader:                  line 119
+Greetings Section:       line 162
+Tools & Socials section: line 190
+Portfolio section:       line 265
+Header:                  line 303
+WCAG class:              line 328
+Media Queries:           line 342
 */
 
 /* Global */
@@ -115,6 +116,49 @@ p {
 }
 /* ============ */
 
+/* Loader */
+    #site--content {
+        display: none;
+    }
+
+    #loader {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+
+    #loader div {
+        font-size: 5rem;
+        color: var(--mainColor);
+    }
+
+    #loader span {
+        position: relative;
+        animation: jump 1.2s infinite;
+    }
+
+    #loader span:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    #loader span:nth-child(3) {
+        animation-delay: 0.8s;
+    }
+    
+    @keyframes jump {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: -15px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+
 /* Greetings Section */
 
 .greetings--section .content--card {
@@ -136,6 +180,10 @@ p {
     padding: 1.5rem 0;
     max-width: 300px;
     max-height: 350px;
+}
+
+.greetings--section h2 {
+    font-size: 2rem;
 }
 /* ============ */
 
@@ -293,7 +341,25 @@ p {
 
 /* Media Queries */
 
+@media (max-width: 1200px) {
+
+    #loader div {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 920px) {
+
+    #loader div {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 670px) {
+
+    #loader div {
+        font-size: 2rem;
+    }
 
     .heading {
         margin-top: 1rem;
@@ -322,6 +388,11 @@ p {
 }
 
 @media (max-width: 420px) {
+
+    #loader div {
+        font-size: 1.5rem;
+    }
+
     .portfolio--content p,
     .greetings--section p {
         font-size: 1rem;

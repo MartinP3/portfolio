@@ -12,111 +12,116 @@
     <link href="./css/index.css" rel="stylesheet" />
     <title>Portfolio</title>
 </head>
-<body>
-    <header>
-        <div class="nav">
-            <a href="#greetings">greetings.html</a>
-            <a href="#my--work">myWork.html</a>
-            <a href="#socials">contactMe.html</a>
-        </div>
-    </header>
-    <main>
+<body onload="loadPage()">
+    <div id="loader">
+        <div>Counting pixels<span>.</span><span>.</span><span>.</span></div>
+    </div>
+    <div id="site--content">
+        <header>
+            <div class="nav">
+                <a href="#greetings">greetings.html</a>
+                <a href="#my--work">myWork.html</a>
+                <a href="#socials">contactMe.html</a>
+            </div>
+        </header>
         <div id="greetings"></div>
-        <section class="greetings--section">
-            <h1 class="heading">Hello!</h1>
-            <div class="content--card box--shadow">
-                <h2>Welcome to my portfolio!</h2>
-                <img src="assets/picture.png" alt="avatar picture">
-                <p>Hello again! My name is Martin Pedersen and I'm currently a student at <a class="hyperlink" href="https://www.noroff.no/" target="_blank">Noroff's</a> online front end studies.</p>
-                <p>I don't have much to say for a self introduction but I'm currently living outside of Ålesund and hoping for a chance to try my hands at a proper frontend development job!</p>
-                <p>I strive to learn and make my websites better and better with each one I build to be able to fulfill my clients' wishes in the future.</p>
-            </div>
-        </section>
-        <section class="tools--section">
-            <h2 class="heading">My tools</h2>
-            <div class="content--card--small box--shadow">
-                <div class="wrapper">
-                    <div class="icon">
-                        <div class="tooltip">HTML5</div>
-                        <span><i class="fa-brands fa-html5"></i></span>
-                    </div>
-                    <div class="icon">
-                        <div class="tooltip">CSS</div>
-                        <span><i class="fa-brands fa-css3"></i></span>
-                    </div>
-                    <div class="icon">
-                        <div class="tooltip">Javascript</div>
-                        <span><i class="fa-brands fa-js"></i></span>
-                    </div>
-                    <div class="icon">
-                        <div class="tooltip">Wordpress</div>
-                        <span><i class="fa-brands fa-wordpress"></i></span>
-                    </div> 
+        <main>
+            <section class="greetings--section">
+                <h1 class="heading">Hello!</h1>
+                <div class="content--card box--shadow">
+                    <h2>Welcome to my portfolio!</h2>
+                    <img src="assets/picture.png" alt="avatar picture">
+                    <p>Hello again! My name is Martin Pedersen and I'm currently a student at <a class="hyperlink" href="https://www.noroff.no/" target="_blank">Noroff's</a> online front end studies.</p>
+                    <p>I don't have much to say for a self introduction but I'm currently living outside of Ålesund and hoping for a chance to try my hands at a proper frontend development job!</p>
+                    <p>I strive to learn and make my websites better and better with each one I build to be able to fulfill my clients' wishes in the future.</p>
                 </div>
-            </div>
-        </section>
-        <div id="my--work"></div>
-        <section>
-            <h2 class="heading">My work</h2>
-            <div class="portfolio--container">
-                <div class="portfolio--content content--card box--shadow">
-                    <img src="assets/crossCourse.png" alt="Screencapture of my cross course website">
-                    <div class="portfolio--card--spacing">
-                        <h3 class="card--heading">Cross Course Project</h3>
-                        <p>This is a site I worked on throughout the year, at first as just a wireframe but ultimately turning into this site.</p>
-                        <p>So here you can see my first ever website, it's not pretty or good but it's the first one I did and I'm proud of how far I've come since.</p>
-                        <div class="portfolio--links">
-                            <div><a class="hyperlink" href="https://github.com/MartinP3/cross-course-project" target="_blank"><i class="fa-brands fa-github"></i> Repo</a></div>
-                            <div><a class="hyperlink" href="https://eager-poitras-06416c.netlify.app/index.html" target="_blank"><i class="fa-solid fa-paper-plane"></i> Site</a></div>
+            </section>
+            <section class="tools--section">
+                <h2 class="heading">My tools</h2>
+                <div class="content--card--small box--shadow">
+                    <div class="wrapper">
+                        <div class="icon">
+                            <div class="tooltip">HTML5</div>
+                            <span><i class="fa-brands fa-html5"></i></span>
+                        </div>
+                        <div class="icon">
+                            <div class="tooltip">CSS</div>
+                            <span><i class="fa-brands fa-css3"></i></span>
+                        </div>
+                        <div class="icon">
+                            <div class="tooltip">Javascript</div>
+                            <span><i class="fa-brands fa-js"></i></span>
+                        </div>
+                        <div class="icon">
+                            <div class="tooltip">Wordpress</div>
+                            <span><i class="fa-brands fa-wordpress"></i></span>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <div id="my--work"></div>
+            <section>
+                <h2 class="heading">My work</h2>
+                <div class="portfolio--container">
+                    <div class="portfolio--content content--card box--shadow">
+                        <img src="assets/crossCourse.png" alt="Screencapture of my cross course website">
+                        <div class="portfolio--card--spacing">
+                            <h3 class="card--heading">Cross Course Project</h3>
+                            <p>This is a site I worked on throughout the year, at first as just a wireframe but ultimately turning into this site.</p>
+                            <p>So here you can see my first ever website, it's not pretty or good but it's the first one I did and I'm proud of how far I've come since.</p>
+                            <div class="portfolio--links">
+                                <div><a class="hyperlink" href="https://github.com/MartinP3/cross-course-project" target="_blank"><i class="fa-brands fa-github"></i> Repo</a></div>
+                                <div><a class="hyperlink" href="https://eager-poitras-06416c.netlify.app/index.html" target="_blank"><i class="fa-solid fa-paper-plane"></i> Site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio--content content--card box--shadow">
+                        <img src="assets/SemesterProject.png" alt="Screencapture of my semester project website">
+                        <div class="portfolio--card--spacing">
+                            <h3 class="card--heading">Semester Project</h3>
+                            <p>In the semester project I was tasked with making a site for the local communal science museum to encourage visits for the youth.</p>
+                            <div class="portfolio--links">
+                                <div><a class="hyperlink" href="https://github.com/MartinP3/semester-project-2021" target="_blank"><i class="fa-brands fa-github"></i> Repo</a></div>
+                                <div><a class="hyperlink" href="https://dazzling-feynman-211a4d.netlify.app/index.html" target="_blank"><i class="fa-solid fa-paper-plane"></i> Site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio--content content--card box--shadow">
+                        <img src="assets/projectExam.png" alt="Screencapture of my project exam website">
+                        <div class="portfolio--card--spacing">
+                            <h3 class="card--heading">Project Exam</h3>
+                            <p>The project exam is my work to show what I've learned throughout my first year as a student and this is the result.</p>
+                            <p>For this site I was faced with the task: Make a blog! My first thought was... FOOD! I like food so it was the natural choice to me.</p>
+                            <div class="portfolio--links">
+                                <div><a class="hyperlink" href="https://github.com/MartinP3/project-exam" target="_blank"><i class="fa-brands fa-github"></i> Repo</a></div>
+                                <div><a class="hyperlink" href="https://thunderous-zabaione-bb5979.netlify.app/index.html" target="_blank"><i class="fa-solid fa-paper-plane"></i> Site</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio--content content--card box--shadow">
-                    <img src="assets/SemesterProject.png" alt="Screencapture of my semester project website">
-                    <div class="portfolio--card--spacing">
-                        <h3 class="card--heading">Semester Project</h3>
-                        <p>In the semester project I was tasked with making a site for the local communal science museum to encourage visits for the youth.</p>
-                        <div class="portfolio--links">
-                            <div><a class="hyperlink" href="https://github.com/MartinP3/semester-project-2021" target="_blank"><i class="fa-brands fa-github"></i> Repo</a></div>
-                            <div><a class="hyperlink" href="https://dazzling-feynman-211a4d.netlify.app/index.html" target="_blank"><i class="fa-solid fa-paper-plane"></i> Site</a></div>
+            </section>
+            <div id="socials"></div>
+            <section class="socials--section">
+                <h2 class="heading">Contact me</h2>
+                <div class="content--card--small box--shadow">
+                    <div class="wrapper">
+                        <div class="icon">
+                            <div class="tooltip">Twitter</div>
+                                <a href="https://twitter.com/terriblecoding" target="_blank"><span><i class="fa-brands fa-twitter"><p class="visually-hidden">Twitter link</p></i></span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="tooltip">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/martin-pedersen-723297241/" target="_blank"><span><i class="fa-brands fa-linkedin-in"><p class="visually-hidden">LinkedIn link</p></i></span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="tooltip">GitHub</div>
+                                <a href="https://github.com/MartinP3" target="_blank"><span><i class="fa-brands fa-github"><p class="visually-hidden">Github link</p></i></span></a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio--content content--card box--shadow">
-                    <img src="assets/projectExam.png" alt="Screencapture of my project exam website">
-                    <div class="portfolio--card--spacing">
-                        <h3 class="card--heading">Project Exam</h3>
-                        <p>The project exam is my work to show what I've learned throughout my first year as a student and this is the result.</p>
-                        <p>For this site I was faced with the task: Make a blog! My first thought was... FOOD! I like food so it was the natural choice to me.</p>
-                        <div class="portfolio--links">
-                            <div><a class="hyperlink" href="https://github.com/MartinP3/project-exam" target="_blank"><i class="fa-brands fa-github"></i> Repo</a></div>
-                            <div><a class="hyperlink" href="https://thunderous-zabaione-bb5979.netlify.app/index.html" target="_blank"><i class="fa-solid fa-paper-plane"></i> Site</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div id="socials"></div>
-        <section class="socials--section">
-            <h2 class="heading">Contact me</h2>
-            <div class="content--card--small box--shadow">
-                <div class="wrapper">
-                    <div class="icon">
-                        <div class="tooltip">Twitter</div>
-                            <a href="https://twitter.com/terriblecoding" target="_blank"><span><i class="fa-brands fa-twitter"><p class="visually-hidden">Twitter link</p></i></span></a>
-                    </div>
-                    <div class="icon">
-                        <div class="tooltip">LinkedIn</div>
-                            <a href="https://www.linkedin.com/in/martin-pedersen-723297241/" target="_blank"><span><i class="fa-brands fa-linkedin-in"><p class="visually-hidden">LinkedIn link</p></i></span></a>
-                    </div>
-                    <div class="icon">
-                        <div class="tooltip">GitHub</div>
-                            <a href="https://github.com/MartinP3" target="_blank"><span><i class="fa-brands fa-github"><p class="visually-hidden">Github link</p></i></span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <script src="js/loader.js"></script>
 </body>
 </html>
