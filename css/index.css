@@ -3,9 +3,9 @@
 Global stuff:            line 13
 Loader:                  line 119
 Greetings Section:       line 162
-Tools & Socials section: line 190
-Portfolio section:       line 265
-Header:                  line 303
+Tools & Socials section: line 191
+Portfolio section:       line 266
+Header:                  line 304
 WCAG class:              line 328
 Media Queries:           line 342
 */
@@ -185,6 +185,7 @@ p {
 .greetings--section h2 {
     font-size: 2rem;
 }
+
 /* ============ */
 
 /* Tools section & Socials */
@@ -404,6 +405,10 @@ p {
     .greetings--section img {
         max-width: 200px;
         max-height: 250px;
+    }
+
+    .greetings--section h2 {
+        font-size: 1.8rem;
     }
 }
 /* ============ */
