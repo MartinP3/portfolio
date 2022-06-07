@@ -320,7 +320,6 @@ p {
 }
 
 .nav a:hover {
-    background: var(--cardColor);
     color: var(--mainColor);
 }
 /* ============ */
