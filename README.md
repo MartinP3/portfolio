@@ -1,6 +1,6 @@
 # Portfolio
 
-![220607164048](https://user-images.githubusercontent.com/70173574/172409040-6302631c-c139-4530-841e-4694cf025efe.png)
+![220607164341](https://user-images.githubusercontent.com/70173574/172409518-3ab0f442-f3fd-4d4a-b904-146154dedd4b.png)
 
 
 A simple overview of the use/purpose of the project.
