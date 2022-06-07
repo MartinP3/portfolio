@@ -1,11 +1,12 @@
 /* Structuring for CSS
 
-Global stuff: line 11
-Greetings Section: line 117
-Tools & Socials section: line 141
-Portfolio section: line 216
-Header: line 254
-Media Queries: line 279
+Global stuff: line 12
+Greetings Section: line 118
+Tools & Socials section: line 142
+Portfolio section: line 217
+Header: line 255
+WCAG class: line 280
+Media Queries: line 292
 */
 
 /* Global */
@@ -274,6 +275,20 @@ p {
     background: var(--cardColor);
     color: var(--mainColor);
 }
+/* ============ */
+
+/* WCAG helping classes */
+
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
 /* ============ */
 
 /* Media Queries */
