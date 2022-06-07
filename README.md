@@ -7,65 +7,45 @@ A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This is my personal portfolio showing my latest works, which I'll continuously add to until I can start removing my earlier work that I'm less proud of.
+I write a bit about myself, to give the visitor an idea of who I am and how they can get in contact with me.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+my color choice was a dark background to try something new and light orange to be the difference maker for the design, and decided on having a nav for a 1 page site to navigate through the different parts of the site with nav names mimicking Visual Studio Code's look with greetings.html, myWork.html and etc after being inspired by my fellow classmate Chrinstonn93's layout.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- Javascript
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+```
+Clone the repository with GitHub desktop
+```
 
-1. Clone the repo:
+Or
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+git clone git@github.com:MartinP3/portfolio.git
 ```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
+I suggest using Visual Studio Code for editing the code and running the Live Server extension if you wish to avoid breaking your F5 key.
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+Currently not in need of any contribution through pull and push requests directly but feel free to message me regarding things that could be improved through my twitter linked below.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+[[My Twitter page](www.twitter.com)](https://twitter.com/terriblecoding)
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+[[My LinkedIn page](www.linkedin.com)](https://www.linkedin.com/in/martin-pedersen-723297241/)
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+I would like to thank Christonn93 for sharing his site and giving me the idea to use this nav naming sense.
