@@ -1,8 +1,9 @@
 :root {
     --bodyColor: rgb(44, 44, 44);
     --cardColor: rgb(31, 31, 31); 
-    --orangeColor: rgb(255, 131, 73); 
-    --darkOrangeColor: rgb(255, 107, 38);
+    --mainColor: rgb(255, 131, 73); 
+    --secondaryColor: rgb(255, 107, 38);
+    --shadowColor: rgb(10, 10, 10);
     --fontColor: #fff;
     --headerFont: 'Joan', serif;
     --bodyFont: 'Roboto', sans-serif;
@@ -62,7 +63,7 @@ h2 {
 
 h1, h2 {
     margin-bottom: 1rem;
-    color: var(--orangeColor);
+    color: var(--mainColor);
     text-shadow: 3px 3px #151515;
 }
 
@@ -76,12 +77,12 @@ p {
 }
 
 .hyperlink {
-    color: var(--orangeColor);
+    color: var(--mainColor);
     font-family: var(--headerFont);
 }
 
 .hyperlink:hover {
-    color: var(--darkOrangeColor);
+    color: var(--secondaryColor);
     text-decoration: underline;
 }
 
@@ -99,7 +100,7 @@ p {
 }
 
 .box--shadow {
-    box-shadow: 3px 6px 9px var(--orangeColor); /* #151515 old code in case of regrets */
+    box-shadow: 3px 6px 9px var(--shadowColor); /* #151515 old code in case of regrets */
 }
 
 .portfolio--card--spacing {
@@ -184,8 +185,8 @@ p {
     height: 60px;
     width: 60px;
     background: var(--bodyColor);
-    color: var(--orangeColor);
-    border: solid 1px var(--orangeColor);
+    color: var(--mainColor);
+    border: solid 1px var(--mainColor);
     border-radius: 50%;
     position: relative;
     z-index: 2;
@@ -203,8 +204,8 @@ p {
     top: 0;
     z-index: 1;
     background: var(--bodyColor);
-    color: var(--darkOrangeColor);
-    border: solid 1px var(--darkOrangeColor);
+    color: var(--secondaryColor);
+    border: solid 1px var(--secondaryColor);
     padding: 10px 18px;
     font-size: 20px;
     font-family: var(--bodyFont);
@@ -223,8 +224,8 @@ p {
   }
 
   .wrapper .icon:hover span{
-    color: var(--darkOrangeColor);
-    border: solid 1px var(--darkOrangeColor);
+    color: var(--secondaryColor);
+    border: solid 1px var(--secondaryColor);
   }
 
   .wrapper .icon:hover span,
@@ -247,13 +248,13 @@ p {
     margin-right: 5px;
     display: inline-block;
     font-size: 2rem;
-    border-right: 1px solid var(--orangeColor);
-    border-bottom: 1px solid var(--orangeColor);
+    border-right: 1px solid var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
 }
 
 .nav a:hover {
     background: var(--cardColor);
-    color: var(--orangeColor);
+    color: var(--mainColor);
 }
 
 /* Media Queries */
