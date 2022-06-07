@@ -23,7 +23,7 @@ my color choice was a dark background to try something new and light orange to b
 ### Installing
 
 ```
-Clone the repository with GitHub desktop
+Clone the repository with GitHub Desktop
 ```
 
 Or
@@ -42,9 +42,9 @@ Currently not in need of any contribution through pull and push requests directl
 
 ## Contact
 
-[[My Twitter page](www.twitter.com)](https://twitter.com/terriblecoding)
+https://twitter.com/terriblecoding
 
-[[My LinkedIn page](www.linkedin.com)](https://www.linkedin.com/in/martin-pedersen-723297241/)
+https://www.linkedin.com/in/martin-pedersen-723297241/
 
 ## Acknowledgments
 
