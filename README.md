@@ -17,6 +17,8 @@ my color choice was a dark background to try something new and light orange to b
 - HTML
 - CSS
 - Javascript
+- Visual Studio Code
+- Netlify
 
 ## Getting Started
 
